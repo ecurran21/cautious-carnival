@@ -27,6 +27,7 @@ const startingDataSource = [
          
   return (
     <View style={styles.container}>
+    <Text style={styles.title}>Top Movies</Text>   
       <FlatList
         data={movies}
         extraData={movies} 
@@ -57,6 +58,12 @@ const styles = StyleSheet.create({
       fontSize: 18,
       height: 54,
     },
+    title: {
+        fontSize: 30,
+        fontWeight: 'bold',
+        marginBottom: 12,
+        color: '#222'
+      },
     border: {
       borderWidth: 1,
       borderColor: "gray",
